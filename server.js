@@ -16,6 +16,12 @@ app.use('/api/auth', require('./server/routes/api/auth'));
 app.use('/api/profile', require('./server/routes/api/profile'));
 app.use('/api/posts', require('./server/routes/api/posts'));
 
+
+// NFT Routes
+app.use('/api/bhanuapitest', require('./server/routes/api/nfts'));
+
+
+
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
